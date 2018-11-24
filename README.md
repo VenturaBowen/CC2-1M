@@ -17,4 +17,4 @@ Morse Code- code for translating letters into Morse and translating morse to let
 
 Stars-code for displaying the pattern star
 
-Student info- code for information about you
+Student info- code for information about the student
