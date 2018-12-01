@@ -1,21 +1,22 @@
-import java.util.*;
 
-public class Fibonacci{
-public static void main(String[] args) {
-        Scanner keyboard = new Scanner(System.in);
-        System.out.println("Enter a Term for Fibonacci");
-        int term = keyboard.nextInt();
-        System.out.println("The Value of " +term+ " in Fibonacci is " + F(term));
+import java.util.Scanner;
 
+
+public class Fibonacci {
+
+   
+    public static void main(String[] args) {
+   
+    Scanner sc = new Scanner(System.in);
+        long n = sc.nextLong();
+        System.out.println(fib(n));
     }
-    public static int F(int n) {
-        if (n == 0) {
-            return 0;
+
+    static long fib(long n) {
+
+        if (n <= 1) {
+            return n;
         }
-        if (n == 1) {
-            return 1;
-        } else {
-            return F(n - 1) + F(n - 2);
-        }
+        return fib(n - 1) + fib(n - 2);
     }
 }
